@@ -107,6 +107,8 @@ alias frsh='php artisan migrate:fresh'
 alias opt='php artisan optimize'
 alias optclr='php artisan optimize:clear'
 alias routes='php artisan route:list'
+alias ports='lsof -i :'
+alias kill= 'sudo  kill -9'
 alias patest='php artisan import:excel policies'
 
 #xampp
