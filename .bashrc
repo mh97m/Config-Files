@@ -101,7 +101,7 @@ alias sys='sudo systemctl'
 
 #laravel
 alias pa='php artisan'
-alias serve='php artisan serve'
+alias srv='php artisan serve'
 alias migrate='php artisan migrate'
 alias frsh='php artisan migrate:fresh'
 alias opt='php artisan optimize'
