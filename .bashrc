@@ -99,6 +99,9 @@ alias upgrade='sudo apt upgrade'
 alias clr='clear'
 alias sys='sudo systemctl'
 
+#git
+alias pull='sudo git pull origin'
+
 #laravel
 alias pa='sudo php artisan'
 alias srv='sudo php artisan serve'
