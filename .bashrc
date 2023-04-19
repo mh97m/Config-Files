@@ -115,6 +115,9 @@ alias routes='sudo php artisan route:list'
 # alias kill= 'sudo  kill -9'
 # alias patest='php artisan import:excel policies'
 
+#react
+alias build='sudo npm run build'
+
 #xampp
 alias lampp='sudo /opt/lampp/lampp start'
 alias lampprestart='sudo /opt/lampp/lampp restart'
