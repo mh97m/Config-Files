@@ -121,6 +121,7 @@ alias build='sudo npm run build'
 
 #xampp
 alias lampp='sudo /opt/lampp/lampp start'
+alias lamppstop='sudo /opt/lampp/lampp stop'
 alias lampprestart='sudo /opt/lampp/lampp restart'
 
 #mongodb
