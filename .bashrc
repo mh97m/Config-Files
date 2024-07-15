@@ -133,6 +133,7 @@ alias mongo='sudo mongod -f /etc/mongod.conf --fork'
 #docker
 alias doc='sudo docker'
 alias docp='sudo docker ps -a'
+alias doci='sudo docker images'
 alias docl='sudo docker logs'
 alias docrc='sudo docker container rm -f'
 alias docri='sudo docker rmi -f'
