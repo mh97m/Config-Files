@@ -130,7 +130,7 @@ alias mongostop='sudo systemctl stop mongod'
 alias mongorestart='sudo systemctl restart mongod'
 alias mongo='sudo mongod -f /etc/mongod.conf --fork'
 
-#mongodb
+#docker
 alias doc='sudo docker'
 alias docp='sudo docker ps -a'
 alias docl='sudo docker logs'
