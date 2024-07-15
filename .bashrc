@@ -57,9 +57,9 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$\n - '
 else
-    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$\n - '
 fi
 unset color_prompt force_color_prompt
 
@@ -128,7 +128,23 @@ alias lampprestart='sudo /opt/lampp/lampp restart'
 alias mongostart='sudo systemctl start mongod'
 alias mongostop='sudo systemctl stop mongod'
 alias mongorestart='sudo systemctl restart mongod'
-alias mongo='sudo mongod -f /etc/mongod.conf'
+alias mongo='sudo mongod -f /etc/mongod.conf --fork'
+
+#mongodb
+alias doc='sudo docker'
+alias docp='sudo docker ps -a'
+alias docl='sudo docker logs'
+alias docrc='sudo docker container rm -f'
+alias docri='sudo docker rmi -f'
+alias docc='sudo docker-compose'
+alias doccp='sudo docker-compose ps -a'
+alias doccu='sudo docker-compose up'
+alias doccd='sudo docker-compose down'
+alias docce='sudo docker-compose exec'
+alias doccb='sudo docker-compose up -d --build'
+
+#python
+alias py='python3'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
