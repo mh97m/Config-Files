@@ -132,17 +132,23 @@ alias mongo='sudo mongod -f /etc/mongod.conf --fork'
 
 #docker
 alias doc='sudo docker'
+
 alias docp='sudo docker ps -a'
 alias doci='sudo docker images'
 alias docl='sudo docker logs'
+
 alias docrc='sudo docker container rm -f'
 alias docri='sudo docker rmi -f'
+
 alias docc='sudo docker-compose'
 alias doccp='sudo docker-compose ps -a'
+alias doccr='sudo docker-compose run'
 alias doccu='sudo docker-compose up'
 alias doccd='sudo docker-compose down'
 alias docce='sudo docker-compose exec'
 alias doccb='sudo docker-compose up -d --build'
+alias doccbr='sudo docker-compose down && sudo docker-compose up -d --build'
+alias da='sudo docker-compose run --rm artisan'
 
 #python
 alias py='python3'
